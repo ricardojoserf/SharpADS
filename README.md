@@ -1,6 +1,6 @@
 # SharpADS
 
-Write, read, delete and list Alternate Data Streams (ADS) values in NTFS filesystem
+C# program to write, read, delete or list Alternate Data Streams (ADS) within NTFS.
 
 
 ### Write one ADS value

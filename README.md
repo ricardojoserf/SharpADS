@@ -5,25 +5,25 @@ C# program to write, read, delete or list Alternate Data Streams (ADS) within NT
 
 ### Write one ADS value
 
-Create or update and ADS value. The payload can be a string, hexadecimal value or a url to download a file:
+Create or update and ADS value. The payload can be a string, a hexadecimal value or a url to download a file:
 
 ```
 SharpADS.exe write FILE_PATH STREAM_NAME PAYLOAD
 ```
 
-String example:
+Example using a string:
 
 ```
 SharpADS.exe write c:\Temp\test.txt ADS_name1 RandomString
 ```
 
-Hexadecimal value example (payload starts with "0x..."):
+Example using a hexadecimal value (payload starts with "0x..."):
 
 ```
 SharpADS.exe write c:\Temp\test.txt ADS_name2 0x4142434445
 ```
 
-Download file example (payload starts with "http" or "https"):
+Example using the content of a downloaded file (payload starts with "http..." or "https..."):
 
 ```
 SharpADS.exe write c:\Temp\test.txt ADS_name3 http://127.0.0.1:8000/a.bin
@@ -38,7 +38,7 @@ SharpADS.exe write c:\Temp\test.txt ADS_name3 http://127.0.0.1:8000/a.bin
 SharpADS.exe read FILE_PATH STREAM_NAME
 ```
 
-Read ADS example:
+Example:
 
 ```
 SharpADS.exe read c:\Temp\test.txt ADS_name1
@@ -53,7 +53,7 @@ SharpADS.exe read c:\Temp\test.txt ADS_name1
 SharpADS.exe delete FILE_PATH STREAM_NAME
 ```
 
-Delete ADS example:
+Example:
 
 ```
 SharpADS.exe delete c:\Temp\test.txt ADS_name1
@@ -68,7 +68,7 @@ SharpADS.exe delete c:\Temp\test.txt ADS_name1
 SharpADS.exe list FILE_PATH
 ```
 
-List all ADS values:
+Example:
 
 ```
 SharpADS.exe list c:\Temp\test.txt
@@ -83,7 +83,7 @@ SharpADS.exe list c:\Temp\test.txt
 SharpADS.exe clear FILE_PATH
 ```
 
-Clear all ADS values:
+Example:
 
 ```
 SharpADS.exe clear c:\Temp\test.txt
